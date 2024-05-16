@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./crud.js"></script>
+    <style>
+        .custom-table {
+            border-collapse: collapse; /* Separate the borders */
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd; 
+    }
+    .custom-table th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      background-color: #f2f2f2; 
+    }
+    
+   
+    .custom-table td {
+      border: 1px solid #ddd; 
+      
+      border-collapse: collapse; 
+      padding: 8px;
+    }
+    </style>
+</head>
+<body>
+    ID:<input type="text" id="id">
+    Name:<input type="text" id="name">
+    Branch:<input type="text" id="branch">
+    Section:<input type="text" id="sec">
+    <button onclick="getData()">GET</button>
+    <button onclick="deleteData()">DELETE</button>
+    <button onclick="updateData()">UPDATE</button>
+    <button onclick="postData()">POST</button>
+    <div id="table-container"></div> 
+    
+</body>
+</html>
